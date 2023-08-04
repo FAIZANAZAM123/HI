@@ -1,0 +1,149 @@
+.navbar {
+    transition: all 0.4s ease;
+}
+
+
+
+.nav-link {
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+ .nav-link:hover {
+    color: #FFD700;
+    transform: scale(0.9);
+} 
+
+.navbar-brand {
+    transition: all 0.3s ease;
+    font-size: 1.5em;
+}
+
+.navbar-brand:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+.News {
+    color: #FFD700;
+}
+
+.World {
+    color: #fff;
+}
+
+.formcon {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+#navbarSupportedContent{
+    width: fit-content;
+}
+
+.nav-item {
+    position: relative;
+    
+}
+
+.nav-item::after {
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 2px;
+width: 100%;
+    background: #FFD700;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+} 
+
+.nav-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+@media(max-width: 992px) {
+    .nav-item{
+        width:fit-content;
+    }
+   
+    .nav-link:hover {
+        color: #FFD700;
+        transform: scalex(1.1);
+    } 
+    .logo{
+        margin-top: 5px;
+    }
+  
+    
+}
+.bi{
+    height: 100px;
+}
+.sticky-top {
+    position: sticky;
+    
+}
+.hello2{
+  
+  display: none;
+
+
+}
+.formcontrol1{
+    display: none;
+    border-radius: 15px;
+    width: 40%;
+    /* margin-top: 20px;; */
+   /* outline: 1px solid black; */
+   transition: all 0.3s ease;
+   border-radius: 15px;
+   /* border:2px solid grey; */
+   /* text-align: center; */
+   
+
+}
+
+
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1215px) {
+    .formcon{
+        display: none;  
+        /* visibility: hidden; */
+   }
+   .hello2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to right, #667eea, #764ba2); */
+    position:sticky;
+    top:59px;
+   height: 42px;
+   }
+   .formcontrol1{
+    display:block;
+    position:sticky;
+   }
+ ul{
+    display: flex;
+    justify-content: space-evenly;
+ }
+  }
+ 
+ 
+  
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    .hello2{
+        display: none;
+       
+    }
+    .formcontrol1{
+        display: none;  
+        
+   }
+ 
+  }
